@@ -44,11 +44,16 @@ type AgentState = {
 function YourMainContent({ themeColor }: { themeColor: string }) {
   // 🪁 Shared State: https://docs.copilotkit.ai/coagents/shared-state
   const {state, setState} = useCoAgent<AgentState>({
-    name: "starterAgent",
+    name: "synth-gpt",
     initialState: {
       proverbs: [
         "CopilotKit may be new, but its the best thing since sliced bread.",
       ],
+    },
+    config: {
+      configurable: {
+        thread_id: "ca96737a-2268-4f3e-81b6-2bf44a4e7390",
+      },
     },
   })
 

@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={"antialiased"}>
-        <CopilotKit runtimeUrl="/api/copilotkit" agent="starterAgent">
+        <CopilotKit runtimeUrl="/api/copilotkit" threadId="ca96737a-2268-4f3e-81b6-2bf44a4e7390" agent="synth-gpt">
           {children}
         </CopilotKit>
       </body>
